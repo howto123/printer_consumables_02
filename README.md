@@ -62,4 +62,4 @@ go to cloud run
 exposed port set to 8080 by goolge (automatically done and works). 80 works too.
 
 url:
-???
+https://printer-consumables-02-stng76kteq-oa.a.run.app
