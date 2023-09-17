@@ -44,22 +44,9 @@ container instances -> deploy the image
 
 ### gcloud
 
-create repository in artifact registry
--> europe-west10-docker.pkg.dev/trainrangenext/consumables
+cloud run
 
-`docker build -t europe-west6-docker.pkg.dev/consumables-398812/consumables/img-v1 .`
-
-`docker tag consumables europe-west6-docker.pkg.dev/consumables-398812/consumables/img-v1`
-
-`docker push europe-west6-docker.pkg.dev/consumables-398812/consumables/img-v1`
-
-
-Because of authentication issues that actually does not seem to work :/
-
-go to cloud run
--> deploy there, set max instances to 1
-
-exposed port set to 8080 by goolge (automatically done and works). 80 works too.
+set up continuous deployment from github main branch -> port mapping works automatically 
 
 url:
 https://printer-consumables-02-stng76kteq-oa.a.run.app
